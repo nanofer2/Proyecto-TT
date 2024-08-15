@@ -15,6 +15,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/Proyecto-TT/css/content.css"> <!-- Hoja de estilos para el manejo general de las paginas -->
+
     <script type="text/javascript">
       function eliminar(Id) {
         let row = Id.parentNode.parentNode;
@@ -22,84 +24,102 @@
         table.deleteRow(row.rowIndex);
       }
     </script>
+
+
   </head>
   <body>
+    <nav class="nav">
+      <a href="">Nosotros</a>
+      <a href="">Compre</a>
+      <a href="">Mi perfil</a>
+  </nav>
+    <header class="header">
+      <img alt="Talento Tech" src="/Proyecto-TT/img/header.png">
+    </header>
+    <div class="content">
+      <aside class="left-side">Publicidad.</aside>
+      <main class="principal">
 
-    <div>
-        <h1>Listado de Usuarios de Talento Tech</h1>
-        <hr>
-        <br>
-    </div>
-    <div class="table-responsive">
-        <table class="table" id="table">
-            <thead>
-              <tr>
-                <th scope="col">ID</th>
-                <th scope="col"></th>
-                <th scope="col">Nombres</th>
-                <th scope="col">Apellidos</th>
-                <th scope="col">Rol</th>
-                <th scope="col">Operación</th>
-              </tr>
-            </thead>
-            <tbody class="table-group-divider">
-              <tr>
-                <th scope="row">1</th>
-                <td><img src="/Proyecto-TT/img/analytics-professional-female.png"></td>
-                <td>Lina María</td>
-                <td>Gonzalez Peña</td>
-                <td>Estudiante</td>
-                <td>
-                  <button class="btn btn-outline-danger" onclick="eliminar(this)" title="Eliminar usuario">
-                    <span class="bi-trash"></span>
-                  </button>
-                  <button type="button" class="btn btn-outline-info" title="Editar usuario">
-                      <span class="bi-pencil-square"></span>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td><img src="/Proyecto-TT/img/about-me-male.png"></td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>Profesor</td>
-                <td>
-                  <button class="btn btn-outline-danger" onclick="eliminar(this)" title="Eliminar usuario">
-                    <span class="bi-trash"></span>
-                  </button>
-                  <button type="button" class="btn btn-outline-info" title="Editar usuario">
-                      <span class="bi-pencil-square"></span>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td><img src="/Proyecto-TT/img/analytics-professional-female.png"></td>
-                <td colspan="2">Larry the Bird</td>
-                <td>Monitor</td>
-                <td>
-                  <button class="btn btn-outline-danger" onclick="eliminar(this)" title="Eliminar usuario">
-                    <span class="bi-trash"></span>
-                  </button>
-                  <button type="button" class="btn btn-outline-info" title="Editar usuario">
-                      <span class="bi-pencil-square"></span>
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table> 
-    </div>
-    <br>
-    <div>
-      <a href="/Proyecto-TT/plataforma/AdministracionUsuarios/nuevousuario.html"  class="btn btn-outline-success" role="button">
-        Adicionar Nuevo&nbsp;<span class="bi-plus-square-fill"></span>  
-      </a>
+        <div>
+          <h1>Listado de Usuarios de Talento Tech</h1>
+          <hr>
+          <br>
+      </div>
+      <div class="table-responsive">
+          <table class="table" id="table">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col"></th>
+                  <th scope="col">Nombres</th>
+                  <th scope="col">Apellidos</th>
+                  <th scope="col">Rol</th>
+                  <th scope="col">Operación</th>
+                </tr>
+              </thead>
+              <tbody class="table-group-divider">
+                <tr>
+                  <th scope="row">1</th>
+                  <td><img src="/Proyecto-TT/img/analytics-professional-female.png"></td>
+                  <td>Lina María</td>
+                  <td>Gonzalez Peña</td>
+                  <td>Estudiante</td>
+                  <td>
+                    <button class="btn btn-outline-danger" onclick="eliminar(this)" title="Eliminar usuario">
+                      <span class="bi-trash"></span>
+                    </button>
+                    <button type="button" class="btn btn-outline-info" title="Editar usuario">
+                        <span class="bi-pencil-square"></span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td><img src="/Proyecto-TT/img/about-me-male.png"></td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>Profesor</td>
+                  <td>
+                    <button class="btn btn-outline-danger" onclick="eliminar(this)" title="Eliminar usuario">
+                      <span class="bi-trash"></span>
+                    </button>
+                    <button type="button" class="btn btn-outline-info" title="Editar usuario">
+                        <span class="bi-pencil-square"></span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td><img src="/Proyecto-TT/img/analytics-professional-female.png"></td>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>Monitor</td>
+                  <td>
+                    <button class="btn btn-outline-danger" onclick="eliminar(this)" title="Eliminar usuario">
+                      <span class="bi-trash"></span>
+                    </button>
+                    <button type="button" class="btn btn-outline-info" title="Editar usuario">
+                        <span class="bi-pencil-square"></span>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table> 
+      </div>
+      <br>
+      <div>
+        <a href="/Proyecto-TT/plataforma/AdministracionUsuarios/nuevousuario.html"  class="btn btn-outline-success" role="button">
+          Adicionar Nuevo&nbsp;<span class="bi-plus-square-fill"></span>  
+        </a>
+  
+        <a href="/Proyecto-TT/menu.html"  class="btn btn-outline-info" role="button">
+          Panel de control&nbsp;<span class="bi-pie-chart-fill"></span>  
+        </a>
+      </div>        
 
-      <a href="/Proyecto-TT/menu.html"  class="btn btn-outline-info" role="button">
-        Panel de control&nbsp;<span class="bi-pie-chart-fill"></span>  
-      </a>
-    </div>
+      </main>
+      <aside class="rigth-side">Adds</aside>
+  </div>
+  <footer class="pie-pagina">Footer</footer>
     
 
     <script

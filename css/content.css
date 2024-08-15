@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;/* respetar propiedades minimas y maximas de documento*/
+    margin: 0;
+    padding: 0;
+  }
+  .nav{
+    background-color: #130b52;
+    height: 30px;
+    color: white;
+    text-align: center;
+  }
+  .nav a{
+    color: white;
+    text-decoration: none;
+  }
+  .header{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: #130b52;
+    color: white;
+    /*background-image: url("");*/
+  }
+
+  .header img {/*permite que la imagen se ajuste al contenedor*/  
+    width: 100%;
+  }      
+  .principal{
+      background-color: #fafafa; /* color gris azulado */
+      width: 70%;
+      height: 700px;
+  }
+  .left-side{
+      background-color: #fffacd; /* color beige */
+      width: 15%;
+      height: 700px;
+      /*float: left;*/
+  }
+  .rigth-side{
+      background-color: hsl(39, 30%, 89%); /* color naranja */
+      width: 15%;
+      height: 700px;
+      /*float: right;*/
+  }
+  .content{
+      display: flex;
+      flex-wrap: wrap;/* si el elemento no cabe hace salto de linea*/
+  }
+  .pie-pagina{
+      background-color: #130b52;
+      height: 115px;
+      color: white;
+  }
