@@ -12,17 +12,27 @@
         <div id="icon-container">
             <img id="logo-gov" src="img/logo_gov.svg" alt="Logo" srcset="">
         </div>
+        <div style="position: absolute; top: 4px; right: 20px; display: flex; gap: 10px;">
+          <a style="background-color: #007BFF; color: white; padding: 10px 20px; text-align: center; font-size: 14px; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s; text-decoration: none;" onmouseover="this.style.backgroundColor='#0056b3';"onmouseout="this.style.backgroundColor='#007BFF';"href="/Proyecto-TT/login1.html">Login</a>
+          <a style="background-color: #28a745; color: white; padding: 10px 20px; text-align: center; font-size: 14px; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s; text-decoration: none;" onmouseover="this.style.backgroundColor='#218838';"onmouseout="this.style.backgroundColor='#28a745';"href="../Proyecto-TT/plataforma/AdministracionUsuarios/nuevousuario.html">Regístrese</a>
+        </div>
+        <div class="dropdown">
+            <button class="menu-button">Menú</button>
+            <div class="dropdown-content">
+                <button onclick="window.location.href='https://www.ejemplo.com/pagina1'">Página 1</button>
+                <button onclick="window.location.href='https://www.ejemplo.com/pagina2'">Página 2</button>
+                <button onclick="window.location.href='https://www.ejemplo.com/pagina3'">Página 3</button>
+            </div>
+        </div>
         <div id="menu" class="text-center">
-            <nav>
-                <a class="item-menu" href="login1.html">Login</a>
+            <nav class="text-center">
                 <a class="item-menu" href="plataforma/AdministracionUsuarios/nuevousuario.html">Registrese</a>
-                <a class="item-menu" href="menu.html">Menu</a>
+                <a class="item-menu" href="menu.html">Quienes somos</a>
             </nav>
         </div>
-
     </div>
-    <content></content>
-    <div id="container" class="test">
+    <content>
+        <div id="container" class="test">
         <div id="banner-tech">
             <img id="img-tech" src="img/logo_tech_talent.webp" alt="talento Tech" srcset="">
         </div>
@@ -48,9 +58,29 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>        
-        
-    </div>
-    <footer id="footer" >Footer</footer>
+    </content>
+    <footer id="footer" >
+            <div class="footer-info">
+                <p>&copy; ©Copyright 2021 - Todos los derechos reservados Gobierno de Colombia </p>
+                <p> Edificio Murillo Toro Cra. 8a entre calles 12A y 12B Bogotá, Colombia - Código Postal 111711
+                      Teléfono Conmutador: +57 601 344 34 - Línea Gratuita: 01-800-0914014
+                      Línea Anticorrupción: 01-800-0912667
+                      Correo Institucional: minticresponde@mintic.gov.co
+                      Denuncias por actos de corrupción: soytransparente@mintic.gov.co
+                      Notificaciones judiciales:
+                      notificacionesjudicialesmintic@mintic.gov.co
+                      notificacionesjudicialesfontic@mintic.gov.co
+                      Horario de Atención Presencial:
+                      Lunes a viernes de 8:30 a.m. – 4:30 p.m. Jornada Continua</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/MinisterioTIC.Colombia/"><img src="../Proyecto-TT/img/icono-facebook.png">Facebook</a>
+                <a href="https://x.com/Ministerio_TIC"><img src="../Proyecto-TT/img/icono-twitter.png">Twitter</a>
+                <a href="https://www.instagram.com/ministerio_tic/"><img style="width: 40px;" src="../Proyecto-TT/img/icono-instagram.png">instagram</a>
+            </div>           
+    </footer>
+    
+      </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

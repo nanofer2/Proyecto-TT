@@ -23,26 +23,50 @@ body {
 
 #header {
     height: 50px;
-    border: 1px solid yellowgreen;
+    border: 0px;
     background-color: #080231;
     color: #fff !important;
     display: flex;
 
 }
 
+
 #container{
     height: 500px;
-    border: 1px solid blue;
+    border: 0px;
+}
+
+.carousel-container {
+    padding-bottom: 50px; 
 }
 
 footer {
-    border: 1px solid red;
-    height: 50px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-info p {
+    margin: 10px 0;
+}
+
+.footer-social {
+    margin-top: 15px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
 }
 
 #icon-container{
     width: 10%;
-    border: 1px solid yellow;
+    border: 0px
     height: 100%;
     display: flex;
     align-items: center;
@@ -64,12 +88,12 @@ footer {
 
 #controls-container{
     width: 10%;
-    border: 1px solid green;
+    border: 0px;
     height: 50px;
 }
  
 #menu {
-    border: 1px solid orange;
+    border: 0px
     width: 100%;
     margin: 10px;
     padding: 10px;
@@ -90,3 +114,62 @@ footer {
     width: 100%;
 
 }
+
+.carousel-container {
+    padding-bottom: 50px; 
+}
+
+.menu-button {
+    background-color: #080231;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+}
+
+/* Contenedor del menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilo para los botones dentro del menú */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Estilo para los botones dentro del menú */
+.dropdown-content button {
+    background-color: white;
+    color: black;
+    padding: 12px 16px;
+    border: none;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Cambiar color al pasar el mouse sobre un botón del submenú */
+.dropdown-content button:hover {
+    background-color: #ddd;
+}
+
+/* Mostrar el menú al hacer hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
