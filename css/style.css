@@ -114,6 +114,16 @@ footer {
     width: 100%;
 
 }
+.text-rigth {
+    text-align: right;
+    width: 100%;
+
+}
+.text-left {
+    text-align: left;
+    width: 100%;
+
+}
 
 .carousel-container {
     padding-bottom: 50px; 
