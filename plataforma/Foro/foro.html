@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"/>
+  <!-- Bootstrap Icons CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="/Proyecto-TT/css/content.css"> <!-- Hoja de estilos para el manejo general de las paginas -->
+    <title>Foros Talento Tech</title>
+    <script type="text/javascript">
+        function adicionarJava(){
+            var asunto = document.getElementById("asunto").value;
+            var participante = document.getElementById("participante").value;
+            var respuesta = document.getElementById("respuesta").value;
+            var fila="<tr><td>"+asunto+"</td><td>"+participante+"</td><td>"+respuesta+"</td></tr>";
+            //alert(fila);
+            var btn = document.createElement("TR");
+            btn.innerHTML=fila;
+            document.getElementById("elementoForo").appendChild(btn);
+            //alert(fila);
+        }
+
+        function adicionarPython(){
+            var asuntoPython = document.getElementById("asuntoPython").value;
+            var participantePython = document.getElementById("participantePython").value;
+            var respuestaPython = document.getElementById("respuestaPython").value;
+            var fila="<tr><td>"+asuntoPython+"</td><td>"+participantePython+"</td><td>"+respuestaPython+"</td></tr>";
+            //alert(fila);
+            var btn = document.createElement("TR");
+            btn.innerHTML=fila;
+            document.getElementById("elementoForoPython").appendChild(btn);
+            //alert(fila);
+        }
+    </script>
+    <style>
+        .principal img{
+            width: 100%;
+        }
+    </style>    
+</head>
+<body>
+
+    <!--<nav>
+        <a href="">Nosotros</a>
+        <a href="">Compre</a>
+        <a href="">Mi perfil</a>
+
+    </nav> -->
+    <header class="header">
+        <img alt="Talento Tech" src="/Proyecto-TT/img/header.png">
+    </header>
+    <div class="content">
+        <aside class="left-side"></aside>
+        <main class="principal">
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <strong>Hablemos Sobre javascript</strong>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div>
+                            <form id="foroJava">
+                                <div class="form-group">
+                                    <label for="asunto">Asunto</label>
+                                    <input type="text" class="form-control" id="asunto" aria-describedby="asuntoHelp"
+                                      placeholder="Ej: manejo de ciclos for" />
+                                    <small id="asuntoHelp" class="form-text text-muted">Registra el asunto de tu particiáción</small>             
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="participante">Participante</label>
+                                    <input type="text" class="form-control" id="participante" aria-describedby="participHelp"
+                                      placeholder="Escribe tu nombre acá" />
+                                    <small id="participHelp" class="form-text text-muted">Ingresa tu nombre</small>             
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="respuesta">Respuesta</label>
+                                    <textarea class="form-control" id="respuesta" rows="3" aria-describedby="answerHelp" placeholder="Escribe tu respuesta"></textarea>
+                                    <small id="answerHelp" class="form-text text-muted">Ingresa tu respuesta</small>             
+                                  </div>                                    
+                                  <br>                                 
+                                  <button type="button" class="btn btn-outline-success" onclick="adicionarJava()" title="Eliminar usuario" id="java">
+                                    <span class="bi-pencil-square">Participa</span>
+                                  </button>
+                                  <a href="/Proyecto-TT/menu.html"  class="btn btn-outline-info" role="button">
+                                    Panel de control&nbsp;<span class="bi-pie-chart-fill"></span>  
+                                  </a>
+                                  
+                                  <br>
+                                  <hr>
+                                  
+                                  <div class="table-responsive">
+                                    <table class="table" id="tableJava">
+                                        <thead>
+                                            <tr>
+                                              <th scope="col">Asunto</th>
+                                              <th scope="col">Participante</th>
+                                              <th scope="col">Respuesta</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody id="elementoForo">
+
+                                          </tbody>
+                                    </table>
+
+                                  </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <strong>¿Por qué te gusta Python?</strong>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <div>
+                            <form id="foroPython">
+                                <div class="form-group">
+                                    <label for="asuntoPython">Asunto</label>
+                                    <input type="text" class="form-control" id="asuntoPython" aria-describedby="asuntoPythonHelp"
+                                      placeholder="Ej: me gusta Python debido a..." />
+                                    <small id="asuntoPythonHelp" class="form-text text-muted">Registra el asunto de tu particiáción</small>             
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="participantePython">Participante</label>
+                                    <input type="text" class="form-control" id="participantePython" aria-describedby="participPythonHelp"
+                                      placeholder="Escribe tu nombre acá" />
+                                    <small id="participPythonHelp" class="form-text text-muted">Ingresa tu nombre</small>             
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="respuestaPython">Respuesta</label>
+                                    <textarea class="form-control" id="respuestaPython" rows="3" aria-describedby="answerPythonHelp" placeholder="Escribe tu respuesta"></textarea>
+                                    <small id="answerPythonHelp" class="form-text text-muted">Ingresa tu respuesta</small>             
+                                  </div>                                    
+                                  <br>                                 
+                                  <button type="button" class="btn btn-outline-success" onclick="adicionarPython()" title="Agregar participación" id="Pythonbtn">
+                                    <span class="bi-pencil-square">Participa</span>
+                                  </button>
+                                  <a href="/Proyecto-TT/menu.html"  class="btn btn-outline-info" role="button">
+                                    Panel de control&nbsp;<span class="bi-pie-chart-fill"></span>  
+                                  </a>
+                                  
+                                  <br>
+                                  <hr>
+                                  
+                                  <div class="table-responsive">
+                                    <table class="table" id="tablePython">
+                                        <thead>
+                                            <tr>
+                                              <th scope="col">Asunto</th>
+                                              <th scope="col">Participante</th>
+                                              <th scope="col">Respuesta</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody id="elementoForoPython">
+
+                                          </tbody>
+                                    </table>
+
+                                  </div>
+
+                            </form>
+                        </div>
+                     
+
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <strong>Felicita a tu profe Favorito del campus<strong>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>            
+
+
+
+        </main>
+        <aside class="rigth-side"></aside>
+    </div>
+    <footer class="pie-pagina"></footer>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+      
+    </script>  
+</body>
+</html>

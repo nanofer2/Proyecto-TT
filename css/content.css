@@ -30,18 +30,18 @@
     width: 100%;
   }      
   .principal{
-      background-color: #fafafa; /* color gris azulado */
+      background-color: #e6e9ff; 
       width: 70%;
       height: 700px;
   }
   .left-side{
-      background-color: #fffacd; /* color beige */
+      background-color: #124882;  
       width: 15%;
       height: 700px;
       /*float: left;*/
   }
   .rigth-side{
-      background-color: hsl(39, 30%, 89%); /* color naranja */
+      background-color: #124882; 
       width: 15%;
       height: 700px;
       /*float: right;*/
@@ -52,7 +52,7 @@
       flex-wrap: wrap;/* si el elemento no cabe hace salto de linea*/
   }
   .pie-pagina{
-      background-color: #130b52;
+      background-color: #124882;
       height: 115px;
       color: white;
   }

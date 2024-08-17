@@ -17,14 +17,83 @@
     rel="stylesheet"
   />
    <style>
-        
+
+    *{
+        box-sizing: border-box;/* respetar propiedades minimas y maximas de documento*/
+        margin: 0;
+        padding: 0;
+      }
+      .nav{
+        background-color: #130b52;
+        height: 30px;
+        color: white;
+        text-align: center;
+      }
+      .nav a{
+        color: white;
+        text-decoration: none;
+        margin:  auto 20px;
+
+      }
+      .header{
+        display: flex;
+        width: 100%;
+        height: 150px;
+        background-color: rgb(6, 46, 111);
+        color: white;
+        /*background-image: url("");*/
+      }
+
+      .header img {/*permite que la imagen se ajuste al contenedor*/  
+        width: 100%;
+      }      
+      .principal{
+          background-color: #fafafa; /* color gris azulado */
+          width: 70%;
+          height: 700px;
+      }
+      .left-side{
+          background-color: #fffacd; /* color beige */
+          width: 15%;
+          height: 700px;
+          /*float: left;*/
+      }
+      .rigth-side{
+          background-color: hsl(39, 30%, 89%); /* color naranja */
+          width: 15%;
+          height: 700px;
+          /*float: right;*/
+      }
+      .content{
+          display: flex;
+          flex-wrap: wrap;/* si el elemento no cabe hace salto de linea*/
+      }
+      .pie-pagina{
+          background-color: #130b52;
+          height: 115px;
+          color: white;
+      }
+            
 
     </style>
 </head>
 
 <body>
 
-    <H2>Calificaciones Estudiantes de TalentoTech</H2>
+  <header class="header"><img alt="Talento Tech" src="header.png"></header>
+  <nav class="nav">
+    <a href="">Nosotros</a>
+    <a href="">Compre</a>
+    <a href="">Mi perfil</a>
+    
+    
+  </nav>
+  <div class="content">
+      <aside class="left-side"></aside>
+      <main class="principal">
+        <br>
+        <H2>Calificaciones Estudiantes</H2>
+        <br>
 
     <div>
         <table class="table" id="table">
@@ -157,6 +226,14 @@
             Adicionar Nuevo&nbsp;<span class="bi-plus-square-fill"></span>  
         </a>
     </div>
+      </main>
+      <aside class="rigth-side"></aside>
+  </div>
+  <footer class="pie-pagina"></footer>
+
+
+
+    
 
 </body>
 
